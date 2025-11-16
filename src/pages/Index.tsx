@@ -97,8 +97,16 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-secondary via-secondary/95 to-primary/20">
-        <div className="container mx-auto">
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/806d4220-5983-4cc9-bb6a-5ff4cafc407e/files/85a7e887-845a-4850-b21f-f707ab51f7b2.jpg" 
+            alt="Industrial Equipment"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-secondary/95 via-secondary/90 to-primary/80"></div>
+        </div>
+        <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Профессиональный подбор промышленного оборудования
@@ -176,6 +184,13 @@ const Index = () => {
               Широкий ассортимент промышленного оборудования для любых производственных задач
             </p>
           </div>
+          <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src="https://cdn.poehali.dev/projects/806d4220-5983-4cc9-bb6a-5ff4cafc407e/files/d2920147-abdb-4b79-ac42-aaaa11887ac5.jpg" 
+              alt="Industrial Machinery"
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {equipment.map((item, index) => (
               <Card 
@@ -203,7 +218,14 @@ const Index = () => {
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6">О нашей компании</h2>
             </div>
-            <Card className="p-8 md:p-12 bg-white shadow-xl border-2">
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src="https://cdn.poehali.dev/projects/806d4220-5983-4cc9-bb6a-5ff4cafc407e/files/79580c96-3ea0-44a2-8a4a-ac603f91853c.jpg" 
+                  alt="Our Team"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="space-y-6 text-lg leading-relaxed text-foreground">
                 <p>
                   Компания <span className="font-bold text-primary">«Кобальт Экспорт»</span> расположена в городе Братислава, Словакия. 
@@ -213,7 +235,11 @@ const Index = () => {
                   Наши квалифицированные сотрудники обеспечивают качественный сервис и надежную логистику. 
                   Мы работаем с ведущими производителями промышленного оборудования и гарантируем высокое качество поставляемой техники.
                 </p>
-                <div className="grid md:grid-cols-3 gap-6 pt-6">
+              </div>
+            </div>
+            <Card className="p-8 bg-white shadow-xl border-2">
+              <div className="space-y-6">
+                <div className="grid md:grid-cols-3 gap-6">
                   <div className="flex items-start gap-3">
                     <Icon name="CheckCircle" className="text-primary mt-1" size={24} />
                     <div>
