@@ -21,56 +21,56 @@ const Index = () => {
   const services = [
     {
       icon: 'Search',
-      title: 'Подбор оптимального оборудования',
-      description: 'Наши специалисты подберут наиболее подходящее оборудование именно для вашего производства'
+      title: 'Výber optimálneho zariadenia',
+      description: 'Naši špecialisti vyberú najvhodnejšie zariadenie práve pre vašu výrobu'
     },
     {
       icon: 'ShoppingCart',
-      title: 'Закупка оборудования',
-      description: 'Мы готовы приобрести необходимое оборудование от проверенных производителей и доставить его прямо на вашу площадку'
+      title: 'Nákup zariadenia',
+      description: 'Sme pripravení zakúpiť potrebné zariadenie od overených výrobcov a dodať ho priamo na vašu lokalitu'
     },
     {
       icon: 'Settings',
-      title: 'Монтаж и пусконаладка',
-      description: 'Комплекс работ по монтажу и запуску оборудования на вашем предприятии обеспечит бесперебойную работу вашей техники'
+      title: 'Montáž a uvedenie do prevádzky',
+      description: 'Komplex prác na montáži a spustení zariadenia vo vašom podniku zabezpečí bezporuchovú prevádzku vašej techniky'
     },
     {
       icon: 'Truck',
-      title: 'Полный цикл логистики',
-      description: 'От закупки до доставки и монтажа – мы берем на себя всю ответственность за процесс поставки оборудования'
+      title: 'Kompletný logistický cyklus',
+      description: 'Od nákupu až po dodávku a montáž – preberáme plnú zodpovednosť za proces dodávky zariadenia'
     }
   ];
 
   const equipment = [
     {
       icon: 'Cpu',
-      title: 'Станки с ЧПУ',
-      description: 'Высокоточные обрабатывающие центры'
+      title: 'CNC stroje',
+      description: 'Vysokopresné obrábacie centrá'
     },
     {
       icon: 'Zap',
-      title: 'Электрооборудование',
-      description: 'Промышленные электрические системы'
+      title: 'Elektrozariadenia',
+      description: 'Priemyselné elektrické systémy'
     },
     {
       icon: 'Factory',
-      title: 'Производственные линии',
-      description: 'Автоматизированные комплексы'
+      title: 'Výrobné linky',
+      description: 'Automatizované komplexy'
     },
     {
       icon: 'Gauge',
-      title: 'Измерительное оборудование',
-      description: 'Точные контрольные приборы'
+      title: 'Meracie zariadenia',
+      description: 'Presné kontrolné prístroje'
     },
     {
       icon: 'Cog',
-      title: 'Промышленная робототехника',
-      description: 'Автоматизация производства'
+      title: 'Priemyselná robotika',
+      description: 'Automatizácia výroby'
     },
     {
       icon: 'Container',
-      title: 'Складское оборудование',
-      description: 'Системы хранения и логистики'
+      title: 'Skladové zariadenia',
+      description: 'Systémy skladovania a logistiky'
     }
   ];
 
@@ -82,13 +82,13 @@ const Index = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
               <Icon name="Box" className="text-white" size={24} />
             </div>
-            <span className="text-2xl font-bold text-secondary">Кобальт Экспорт</span>
+            <span className="text-2xl font-bold text-secondary">Kobalt Export</span>
           </div>
           <nav className="hidden md:flex gap-8">
-            <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">Услуги</a>
-            <a href="#catalog" className="text-foreground hover:text-primary transition-colors font-medium">Каталог</a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">О компании</a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Контакты</a>
+            <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">Služby</a>
+            <a href="#catalog" className="text-foreground hover:text-primary transition-colors font-medium">Katalóg</a>
+            <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">O spoločnosti</a>
+            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Kontakt</a>
           </nav>
           <Button className="hidden md:flex">
             <Icon name="Phone" size={18} className="mr-2" />
@@ -109,19 +109,19 @@ const Index = () => {
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Профессиональный подбор промышленного оборудования
+              Profesionálny výber priemyselného zariadenia
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-10">
-              Компания «Кобальт Экспорт» специализируется на экспорте промышленного оборудования с полным циклом логистики
+              Spoločnosť «Kobalt Export» sa špecializuje na export priemyselných zariadení s kompletným logistickým cyklom
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-secondary hover:bg-white/90 text-lg px-8 py-6">
                 <Icon name="MessageSquare" size={20} className="mr-2" />
-                Получить консультацию
+                Získať konzultáciu
               </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-secondary text-lg px-8 py-6">
                 <Icon name="Folder" size={20} className="mr-2" />
-                Посмотреть каталог
+                Pozrieť katalóg
               </Button>
             </div>
           </div>
@@ -133,19 +133,19 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-slide-up">
               <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <div className="text-muted-foreground">Проектов реализовано</div>
+              <div className="text-muted-foreground">Realizovaných projektov</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
               <div className="text-4xl font-bold text-primary mb-2">15+</div>
-              <div className="text-muted-foreground">Лет на рынке</div>
+              <div className="text-muted-foreground">Rokov na trhu</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-4xl font-bold text-primary mb-2">200+</div>
-              <div className="text-muted-foreground">Партнёров</div>
+              <div className="text-muted-foreground">Partnerov</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
               <div className="text-4xl font-bold text-primary mb-2">98%</div>
-              <div className="text-muted-foreground">Довольных клиентов</div>
+              <div className="text-muted-foreground">Spokojných klientov</div>
             </div>
           </div>
         </div>
@@ -154,9 +154,9 @@ const Index = () => {
       <section id="services" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">Наши услуги</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">Naše služby</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Полный спектр услуг по подбору, покупке и доставке промышленного оборудования
+              Kompletné spektrum služieb pre výber, nákup a dodávku priemyselných zariadení
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -179,9 +179,9 @@ const Index = () => {
       <section id="catalog" className="py-20 px-4 bg-white">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">Каталог оборудования</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">Katalóg zariadení</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Широкий ассортимент промышленного оборудования для любых производственных задач
+              Široký sortiment priemyselných zariadení pre akékoľvek výrobné úlohy
             </p>
           </div>
           <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
@@ -216,7 +216,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6">О нашей компании</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6">O našej spoločnosti</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
               <div className="rounded-2xl overflow-hidden shadow-xl">
@@ -228,12 +228,12 @@ const Index = () => {
               </div>
               <div className="space-y-6 text-lg leading-relaxed text-foreground">
                 <p>
-                  Компания <span className="font-bold text-primary">«Кобальт Экспорт»</span> расположена в городе Братислава, Словакия. 
-                  Мы предлагаем полный спектр услуг по подбору, покупке и доставке промышленного оборудования для предприятий различного профиля.
+                  Spoločnosť <span className="font-bold text-primary">«Kobalt Export»</span> sídli v Bratislave na Slovensku. 
+                  Ponúkame komplexné spektrum služieb pre výber, nákup a dodávku priemyselných zariadení pre podniky rôzneho zamerania.
                 </p>
                 <p>
-                  Наши квалифицированные сотрудники обеспечивают качественный сервис и надежную логистику. 
-                  Мы работаем с ведущими производителями промышленного оборудования и гарантируем высокое качество поставляемой техники.
+                  Naši kvalifikovaní zamestnanci zabezpečujú kvalitný servis a spoľahlivú logistiku. 
+                  Spolupracujeme s popredným výrobcami priemyselných zariadení a garantujeme vysokú kvalitu dodávanej techniky.
                 </p>
               </div>
             </div>
@@ -243,22 +243,22 @@ const Index = () => {
                   <div className="flex items-start gap-3">
                     <Icon name="CheckCircle" className="text-primary mt-1" size={24} />
                     <div>
-                      <div className="font-bold text-secondary mb-1">Качество</div>
-                      <div className="text-muted-foreground text-sm">Проверенные производители</div>
+                      <div className="font-bold text-secondary mb-1">Kvalita</div>
+                      <div className="text-muted-foreground text-sm">Overení výrobcovia</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Icon name="Clock" className="text-primary mt-1" size={24} />
                     <div>
-                      <div className="font-bold text-secondary mb-1">Скорость</div>
-                      <div className="text-muted-foreground text-sm">Быстрая доставка</div>
+                      <div className="font-bold text-secondary mb-1">Rýchlosť</div>
+                      <div className="text-muted-foreground text-sm">Rýchla dodávka</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Icon name="Shield" className="text-primary mt-1" size={24} />
                     <div>
-                      <div className="font-bold text-secondary mb-1">Надежность</div>
-                      <div className="text-muted-foreground text-sm">Гарантия на оборудование</div>
+                      <div className="font-bold text-secondary mb-1">Spoľahlivosť</div>
+                      <div className="text-muted-foreground text-sm">Záruka na zariadenie</div>
                     </div>
                   </div>
                 </div>
@@ -272,26 +272,26 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">Свяжитесь с нами</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">Kontaktujte nás</h2>
               <p className="text-xl text-muted-foreground">
-                Готовы обсудить ваш проект? Заполните форму или позвоните нам
+                Ste pripravení prediskutovať váš projekt? Vyplňte formulár alebo nám zavolajte
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="p-8 bg-gradient-to-br from-primary to-accent text-white">
-                <h3 className="text-2xl font-bold mb-6">Контактная информация</h3>
+                <h3 className="text-2xl font-bold mb-6">Kontaktné informácie</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <Icon name="MapPin" size={24} className="mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold mb-1">Адрес</div>
-                      <div className="opacity-90">ул. Вацлава Гавела, д. 18<br />Братислава, Словакия</div>
+                      <div className="font-semibold mb-1">Adresa</div>
+                      <div className="opacity-90">Václava Havla 18<br />Bratislava, Slovensko</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Icon name="Phone" size={24} className="mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold mb-1">Телефон</div>
+                      <div className="font-semibold mb-1">Telefón</div>
                       <div className="opacity-90">+421 123 456 789</div>
                     </div>
                   </div>
@@ -305,8 +305,8 @@ const Index = () => {
                   <div className="flex items-start gap-4">
                     <Icon name="Clock" size={24} className="mt-1 flex-shrink-0" />
                     <div>
-                      <div className="font-semibold mb-1">Режим работы</div>
-                      <div className="opacity-90">Пн-Пт: 9:00 - 18:00</div>
+                      <div className="font-semibold mb-1">Pracovné hodiny</div>
+                      <div className="opacity-90">Po-Pia: 9:00 - 18:00</div>
                     </div>
                   </div>
                 </div>
@@ -316,7 +316,7 @@ const Index = () => {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-secondary mb-2">
-                      Имя *
+                      Meno *
                     </label>
                     <Input
                       id="name"
@@ -325,12 +325,12 @@ const Index = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full"
-                      placeholder="Ваше имя"
+                      placeholder="Vaše meno"
                     />
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-secondary mb-2">
-                      Телефон *
+                      Telefón *
                     </label>
                     <Input
                       id="phone"
@@ -358,19 +358,19 @@ const Index = () => {
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-secondary mb-2">
-                      Сообщение
+                      Správa
                     </label>
                     <Textarea
                       id="message"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="w-full min-h-[120px]"
-                      placeholder="Расскажите о вашем проекте..."
+                      placeholder="Povedzte nám o vašom projekte..."
                     />
                   </div>
                   <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-lg">
                     <Icon name="Send" size={20} className="mr-2" />
-                    Отправить сообщение
+                    Odoslať správu
                   </Button>
                 </form>
               </Card>
@@ -387,40 +387,40 @@ const Index = () => {
                 <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
                   <Icon name="Box" className="text-white" size={24} />
                 </div>
-                <span className="text-xl font-bold">Кобальт Экспорт</span>
+                <span className="text-xl font-bold">Kobalt Export</span>
               </div>
               <p className="text-white/70 text-sm">
-                Профессиональные решения для промышленности
+                Profesionálne riešenia pre priemysel
               </p>
             </div>
             <div>
-              <h4 className="font-bold mb-4">Услуги</h4>
+              <h4 className="font-bold mb-4">Služby</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                <li><a href="#services" className="hover:text-white transition-colors">Подбор оборудования</a></li>
-                <li><a href="#services" className="hover:text-white transition-colors">Закупка</a></li>
-                <li><a href="#services" className="hover:text-white transition-colors">Монтаж</a></li>
-                <li><a href="#services" className="hover:text-white transition-colors">Логистика</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Výber zariadení</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Nákup</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Montáž</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Logistika</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">Компания</h4>
+              <h4 className="font-bold mb-4">Spoločnosť</h4>
               <ul className="space-y-2 text-white/70 text-sm">
-                <li><a href="#about" className="hover:text-white transition-colors">О нас</a></li>
-                <li><a href="#catalog" className="hover:text-white transition-colors">Каталог</a></li>
-                <li><a href="#contact" className="hover:text-white transition-colors">Контакты</a></li>
+                <li><a href="#about" className="hover:text-white transition-colors">O nás</a></li>
+                <li><a href="#catalog" className="hover:text-white transition-colors">Katalóg</a></li>
+                <li><a href="#contact" className="hover:text-white transition-colors">Kontakt</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">Контакты</h4>
+              <h4 className="font-bold mb-4">Kontakt</h4>
               <ul className="space-y-2 text-white/70 text-sm">
                 <li>+421 123 456 789</li>
                 <li>info@kobaltexport.sk</li>
-                <li>Братислава, Словакия</li>
+                <li>Bratislava, Slovensko</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
-            © 2025 «Кобальт Экспорт». Все права защищены.
+            © 2025 «Kobalt Export». Všetky práva vyhradené.
           </div>
         </div>
       </footer>
