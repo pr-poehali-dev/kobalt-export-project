@@ -194,6 +194,7 @@ const translations = {
 
 const Index = () => {
   const [language, setLanguage] = useState<Language>('sk');
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -202,6 +203,14 @@ const Index = () => {
   });
 
   const t = translations[language];
+
+  const handleLanguageChange = () => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setLanguage(language === 'sk' ? 'en' : 'sk');
+      setIsTransitioning(false);
+    }, 150);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -231,7 +240,7 @@ const Index = () => {
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setLanguage(language === 'sk' ? 'en' : 'sk')}
+              onClick={handleLanguageChange}
               className="flex items-center gap-2"
             >
               <Icon name="Globe" size={16} />
@@ -255,7 +264,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/95 via-secondary/90 to-primary/80"></div>
         </div>
         <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
+          <div className={`max-w-4xl mx-auto text-center animate-fade-in ${!isTransitioning ? 'language-transition' : 'opacity-0'}`}>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               {t.hero.title}
             </h1>
@@ -301,7 +310,7 @@ const Index = () => {
 
       <section id="services" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className={`text-center mb-16 ${!isTransitioning ? 'language-transition' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">{t.services.title}</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               {t.services.subtitle}
@@ -326,7 +335,7 @@ const Index = () => {
 
       <section id="catalog" className="py-20 px-4 bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className={`text-center mb-16 ${!isTransitioning ? 'language-transition' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">{t.catalog.title}</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               {t.catalog.subtitle}
@@ -359,7 +368,7 @@ const Index = () => {
       <section id="about" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className={!isTransitioning ? 'language-transition' : 'opacity-0'}>
               <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-6">{t.about.title}</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
@@ -400,7 +409,7 @@ const Index = () => {
 
       <section id="contact" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
+          <div className={`text-center mb-12 ${!isTransitioning ? 'language-transition' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-5xl font-bold text-secondary mb-4">{t.contact.title}</h2>
             <p className="text-xl text-muted-foreground">
               {t.contact.subtitle}
